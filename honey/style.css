@@ -1,0 +1,464 @@
+ /*
+
+Theme Name: Honey
+Theme URI:
+Version: 1.0
+Author: Pan Wang
+Author URI:
+Description: A colorful, minimal theme that renders information fast and straightforward.
+Domain Path:
+Status:
+Tags: minimal colorful white
+Template:
+Text Domain:
+Lisence: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%
+  font-size: 2rem;
+  font-family: "Helvetica Neue", Tahoma, Arial, "Hiragino Sans GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f0f0f0;
+}
+
+a {
+  color: #00a8c6;
+  border-bottom: none;
+  /*letter-spacing: 1px;*/
+  font-size: 2rem;
+  font-family: "Helvetica Neue", Tahoma, Arial, "Hiragino Sans GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
+a {
+    color: #2b2b2b;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+a:hover {
+  color: #bebebe;
+  text-decoration: none;
+}
+
+/*#jumbotron {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url('image/jumbotron.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+.menu-outer {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #bebebe;
+}
+
+nav {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.social-icons {
+    position: absolute;
+    top: 40px;
+    left: 11%;
+}
+
+.social-icons a, .social-icons a:visited, .social-icons a:active {
+    margin-right: 13px;
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    color: #000;
+    border: none;
+}
+
+.navbar-header {
+  float: none;
+}
+
+a.navbar-header {
+  color: white;
+  background-image: url('/honey_and_wool/wp-content/themes/honey/image/honey-logo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 160px auto;
+  height: 50px;
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+}
+
+.navbar-header:hover {
+  color: #000;
+  border: none;
+}
+
+h1.site-title {
+    text-indent: -99999px;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+div#search-link {
+    position: absolute;
+    top: 35px;
+    right: 11%;
+}
+
+.search-link {
+    display: inline-block;
+    /*border: 1px solid #bebebe !important;*/
+    margin-left: 5px;
+    line-height: 1.1;
+}
+
+.search-form {
+    display: inline;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border: 1px solid;
+    border-color: #ccc #ccc #bbb;
+    border-radius: 3px;
+    background: #e6e6e6;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, .8);
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: .6em 1em .4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.search-submit {
+    background: transparent !important;
+    border: 0 !important;
+    background-image: url('/honey_and_wool/wp-content/themes/honey/image/search.png') !important;
+    background-position: center center !important;
+    background-size: 14px 14px !important;
+    background-repeat: no-repeat !important;
+    box-shadow: none !important;
+    outline: none !important;
+    height: 10px !important;
+    width: 10px !important;
+    vertical-align: 4px;
+}
+
+#site-navigation {
+  border-top: 1px solid #bebebe;
+  z-index: 9999;
+}
+
+.main-navigation {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-navigation li {
+    display: inline-block;
+    /*letter-spacing: 3px;*/
+    text-align: center;
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #000;
+    padding: 20px 20px;
+    outline: none;
+}
+
+a:visited {
+    color: #2b2b2b;
+}
+
+.main-navigation a:hover {
+    color: #bebebe;
+    background: transparent;
+    border: none;
+}
+
+div#content-div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content-limiter {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+div#main {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.journal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.posts {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  border: 8px solid #fff;
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+
+.posts a {
+  color: #000;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.posts a:hover {
+  color: #bebebe;
+  opacity: 0.8;
+  border: none;
+}
+
+.posts a img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  border: 1px solid #;
+}
+
+.posts hr {
+  margin: 0 30px 0 30px;
+  background-color: #ccc;
+}
+
+.posts h2 {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.posts p {
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+div.single {
+  background-color: #fff;
+}
+
+article.new-post {
+  width: 100%;
+}
+
+div.banner-img img {
+  width: 100%;
+  height: auto;
+}
+
+div.post-entry {
+  background: #f0f0f0;
+  margin: 8px 0;
+  padding: 30px 0;
+  text-align: left;
+  color: #000;
+}
+
+header.post-entry-header {
+  margin-bottom: 60px;
+}
+
+div.post-entry-limiter {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+div.blog-content {
+}
+
+div.blog-content p {
+  padding-bottom: 4rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+
+div.blog-content a {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  border-bottom: 1px dotted #000;
+}
+
+div.blog-content img {
+  display: block;
+  border: 8px solid #fff;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+div.blog-content a:hover {
+  color: #bebebe;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+div.blog-content::first-letter {
+  font-size: 5rem;
+  /*float: left;*/
+  /*padding: 12px 4px 0 0;*/
+}
+
+div.search-title {
+  margin: 20px auto 0;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+
+div.wp-pagenavi {
+  text-align: center;
+}
+
+div.wp-pagenavi a {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+div.wp-pagenavi span.current {
+  font-weight: bolder;
+  font-size: 1.7rem;
+  margin: 0 8px;
+}
+
+div.wp-pagenavi a.page, div.wp-pagenavi a.nextpostslink, div.wp-pagenavi a.previouspostslink {
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+
+div.wp-pagenavi a.page:hover, div.wp-pagenavi a.nextpostslink:hover, div.wp-pagenavi a.previouspostslink:hover {
+  color: #bebebe;
+}
+
+div.wp-pagenavi a.page:visited, div.wp-pagenavi a.nextpostslink:visited, div.wp-pagenavi a.previouspostslink:visited {
+  color: #000;
+  border: none;
+  text-decoration: none;
+}
+
+div.wp-pagenavi a.page:active, div.wp-pagenavi a.nextpostslink:active, div.wp-pagenavi a.previouspostslink:active {
+  color: #000;
+  border: none;
+  text-decoration: none;
+}
+
+footer {
+  margin: 20px auto 0;
+  padding: 8px 0;
+  border-top: 1px solid #bebebe;
+  text-align: center;
+
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-width: 980px) {
+  .navbar-header {
+    float: none;
+    margin-bottom: 0px;
+  }
+
+  img.navbar-header {
+    margin: 0;
+  }
+
+  .menu-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  div#search-link {
+    visibility: hidden;
+  }
+
+  .social-icons {
+    visibility: hidden;
+  }
+
+  div.post-entry-limiter {
+    margin: 0 5%;
+  }
+
+  div.blog-content {
+    text-align: justify;
+  }
+
+}
